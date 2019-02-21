@@ -8,6 +8,8 @@ This project is the backend of Vidly, an imaginary video rental app. I've used V
 
 This is the implementation of Vidly in Node.js.
 
+**NOTE:** Use Node Latest Carbon LTS (v8.15.0)
+
 ## Setup
 
 Make sure to follow all these steps exactly as explained below. Do not miss any steps or you won't be able to run this application.
