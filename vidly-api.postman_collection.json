@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "0e7ea37a-b6b8-49b4-969e-0e9d4d013025",
+		"name": "Mastering React - Vidly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "movies.get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3900/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3900",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies.post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"A new movie\",\n    \"numberInStock\": 1,\n    \"dailyRentalRate\": 2,\n    \"genreId\": \"5c6d84f5ee40c05b90329ac8\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3900/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3900",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users.post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"user1@domain.com\",\n\t\"password\": \"123456\",\n\t\"name\": \"Mosh\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3900/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3900",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth.post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"user1@domain.com\",\n\t\"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3900/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3900",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
